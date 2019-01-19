@@ -4,6 +4,7 @@ const LocationType = require("../../types/location");
 const locationService = require("../../../services/location");
 
 module.exports = {
+  description: "To get details of a particular location.",
   type: LocationType,
   args: {
     id: {

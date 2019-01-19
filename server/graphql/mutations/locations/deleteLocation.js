@@ -4,6 +4,7 @@ const LocationType = require("../../types/location");
 const locationService = require("../../../services/location");
 
 module.exports = {
+  description: "To delete an existing location from the database.",
   type: GraphQLBoolean,
   args: {
     id: {

@@ -4,6 +4,7 @@ const LocationType = require("../../types/location");
 const locationService = require("../../../services/location");
 
 module.exports = {
+  description: "To update an existing location into the database.",
   type: LocationType,
   args: {
     id: {

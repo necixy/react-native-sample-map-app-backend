@@ -41,8 +41,8 @@ async function updateLocation(params) {
 }
 
 async function deleteLocation(id) {
-  await locationModel.deleteOne({ _id: id });
-  return true;
+  const result = await locationModel.deleteOne({ _id: id });
+  return result.n === 1;
 }
 
 module.exports = {
