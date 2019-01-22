@@ -18,7 +18,7 @@ const SAMPLE_LOCATION_2 = {
 
 let newLocation;
 
-describe("Location Service Tests", () => {
+describe("Location Service Unit Tests", () => {
   it("Should connect to database and get locations", async () => {
     const locations = await locationService.getLocations();
     expect(locations).to.be.an("array");

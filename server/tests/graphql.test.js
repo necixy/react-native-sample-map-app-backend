@@ -35,7 +35,7 @@ function graphqlRequest(query, callback) {
     });
 }
 
-describe("GraphQL Endpoints Tests", () => {
+describe("GraphQL Endpoints Integration Tests", () => {
   it("Locations query test", done => {
     graphqlRequest(`{ locations { id name address lat lng } }`, res => {
       const { locations } = res.body.data;
